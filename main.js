@@ -1,5 +1,5 @@
 canvas = document.getElementById("myCanvas");
-ctx.canvas.getContext("2d");
+ctx=canvas.getContext("2d");
 
 img_width = 300;
 img_height = 100;
@@ -16,7 +16,6 @@ function add() {
 }
 
 function uploading() {
-
 	ctx.drawImage(img_imgTag, img_x, img_y, img_width, img_height);
 }
 
@@ -42,7 +41,7 @@ function my_keydown(e)
 	}
 
 	else if(keyPressed >=37 && keyPressed <=40){
-		numberkey();
+		arrowkey();
 		document.getElementById("d1").innerHTML="You pressed arrow key";
 		console.log("arrow key");
 	}
